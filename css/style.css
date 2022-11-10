@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(204deg, 43%, 93%);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.main .section {
+  width: 260px;
+}
+.main .section .text-box {
+  padding: 1.5em;
+}
+.main .section .text-box .heading {
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+.main .section .text-box .head-cyan {
+  color: hsl(179deg, 62%, 43%);
+}
+.main .section .text-box .head-white,
+.main .section .text-box .paragraph {
+  color: hsl(255deg, 100%, 100%);
+}
+.main .section .text-box .paragraph-grey {
+  color: hsl(218deg, 22%, 67%);
+}
+.main .section .text-box .guarantee {
+  margin-bottom: 1em;
+  font-weight: bold;
+  color: hsl(71deg, 73%, 54%);
+}
+.main .section .text-box .large {
+  margin-top: 1em;
+  font-size: 1.7rem;
+}
+.main .section .text-box .prices {
+  display: flex;
+  flex-direction: row;
+  color: hsl(255deg, 100%, 100%);
+}
+.main .section .text-box .prices .price {
+  font-size: 3rem;
+  margin-right: 0.3em;
+}
+.main .section .text-box .prices .month {
+  display: flex;
+  align-items: center;
+  font-weight: lighter;
+}
+.main .section .text-box .btn {
+  margin-top: 2em;
+  width: 210px;
+  height: 40px;
+  font-family: "Karla", sans-serif;
+  color: hsl(255deg, 100%, 100%);
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  background-color: hsl(71deg, 73%, 54%);
+  border: 1px solid hsl(71deg, 73%, 54%);
+}
+.main .section .text-box .btn:hover {
+  cursor: pointer;
+}
+.main .community {
+  margin-top: 3em;
+  background-color: hsl(255deg, 100%, 100%);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.main .subscription {
+  background-color: hsl(179deg, 62%, 43%);
+}
+.main .about-us {
+  background-color: hsl(179deg, 47%, 52%);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.main .about-us .paragraph {
+  margin-top: 0.3em;
+  font-weight: lighter;
+}
+
+.footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 400px) {
+  .main .section {
+    width: 350px;
+  }
+}
+@media (min-width: 576px) {
+  body {
+    min-height: 100vh;
+    align-items: center;
+  }
+  .main .section .text-box .heading {
+    font-size: 2.5rem;
+  }
+  .main .section .text-box .paragraph {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .main .section {
+    width: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .main {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .main .section {
+    width: auto;
+  }
+  .main .section .text-box .heading {
+    padding: 0.5em;
+    font-size: 2.7rem;
+  }
+  .main .section .text-box .paragraph {
+    padding-left: 0.8em;
+    font-size: 1.8rem;
+  }
+  .main .section .text-box .price {
+    padding-left: 0.5em;
+  }
+  .main .section .text-box .btn {
+    width: 350px;
+    height: 50px;
+  }
+  .main .community {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .main .subscription {
+    border-bottom-left-radius: 8px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .main .about-us {
+    border-bottom-left-radius: 0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}/*# sourceMappingURL=style.css.map */
